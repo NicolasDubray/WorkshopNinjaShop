@@ -1,0 +1,270 @@
+:root {
+    --near-black: #222222;
+}
+
+header,
+main,
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: #000;
+    padding-top: 100px;
+    padding-bottom: 125px;
+}
+
+.wrapper {
+    max-width: 999px;
+    width: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 102px;
+    line-height: 100%;
+    text-align: center;
+    color: var(--near-black);
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    color: #EEEEEE;
+}
+
+p {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 608px;
+    background-color: #3de07e;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+aside {
+    align-self: flex-start;
+    padding-top: 32px;
+    padding-left: 32px;
+}
+
+header aside img {
+    margin-left: 0;
+}
+
+article.card,
+article.big-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article.card img,
+article.big-card img {
+    display: block;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+    width: 100%;
+}
+
+article.card {
+    width: 311px;
+    background-color: #000;
+    color: #fff;
+}
+
+article.card h2 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+article.card p {
+    color: #FFFFFF;
+}
+
+article.card .button {
+    width: 139px;
+    height: 30px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #e83f57;
+    color: #FFFFFF;
+}
+
+article.big-card {
+    width: 483px;
+    background-color: #FFFFFF;
+    color: var(--near-black);
+}
+
+article.big-card section {
+    padding-left: 16px;
+    padding-bottom: 12px;
+}
+
+article.big-card h2,
+article.big-card h3 {
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100%;
+    color: var(--near-black);
+}
+
+article.big-card p {
+    color: var(--near-black);
+}
+
+article.big-card .button {
+    width: 173px;
+    height: 49px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #e83f57;
+    color: #FFFFFF;
+}
+
+.wrapper > h2 {
+    flex-basis: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+    color: #EEEEEE;
+}
+
+.cart {
+    width: 999px;
+    margin: 90px auto;
+
+    display: grid;
+}
+
+.cart-row {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr 0.33fr;
+    align-items: center;
+
+    padding: 16px 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    color: #EEEEEE;
+}
+
+.cart-header {
+    padding: 8px 0;
+
+    font-size: 24px;
+    background: #2f0b0b;
+    color: #c7c0c0;
+}
+
+.cart-total {
+    padding-top: 32px;
+    border-top: 1px solid #D9D9D9;
+    font-weight: 700;
+}
+
+.buy-button {
+    display: block;
+    margin-left: auto;
+
+    width: 397px;
+    height: 70px;
+
+    border: none;
+    border-radius: 6px;
+
+    background-color: #e83f57;
+    color: #FFFFFF;
+
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+}
+
+footer {
+    height: 320px;
+    background-color: #333333;
+    color: #FFFFFF;
+
+    font-family: 'Fira Sans', sans-serif;
+}
+
+footer .footer-links {
+    width: 999px;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 32px;
+}
+
+footer .footer-links > * {
+    flex: 1;
+}
+
+footer h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+footer nav a {
+    display: block;
+}
+
+footer article p,
+footer article a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+footer article p {
+    margin: 0 0 0.25em 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer .icons {
+    display: flex;
+    gap: 16px;
+}
