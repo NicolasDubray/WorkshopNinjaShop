@@ -2,26 +2,25 @@
     --near-black: #222222;
 }
 
-header,
-main,
-footer {
-    max-width: 1440px;
-    margin: 0 auto;
+body {
+    margin: 0;
+    padding: 0;
 }
 
 main {
     background-color: #000;
+    width: 100%;
     padding-top: 100px;
     padding-bottom: 125px;
 }
 
 .wrapper {
     max-width: 999px;
-    width: 100%;
     margin: 0 auto;
 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 32px;
 }
 
@@ -32,6 +31,8 @@ h1 {
     line-height: 100%;
     text-align: center;
     color: var(--near-black);
+
+    font-size: clamp(70px, 10vw, 102px);
 }
 
 h3 {
@@ -85,6 +86,16 @@ article.big-card img {
     width: 100%;
 }
 
+article.card {
+    flex: 1 1 230px;
+    max-width: 311px;
+}
+
+article.big-card {
+    flex: 1 1 400px;
+    max-width: 483px;
+}
+
 figure {
     margin: 0;
     width: 100%;
@@ -109,6 +120,8 @@ article.card p {
 }
 
 article.card .button {
+    margin-top: 20px;
+
     width: 139px;
     height: 30px;
 
@@ -117,6 +130,10 @@ article.card .button {
 
     background-color: #e83f57;
     color: #FFFFFF;
+}
+
+.big-cards {
+    margin-top: 100px;
 }
 
 article.big-card {
@@ -226,11 +243,16 @@ footer {
 }
 
 footer .footer-links {
-    width: 999px;
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
     margin: 0 auto;
 
-    display: flex;
-    gap: 32px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
 }
 
 footer .footer-links > * {
